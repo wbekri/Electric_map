@@ -1,28 +1,33 @@
 body {
 	background-color: gainsboro;
 }
-#main h1{
-	width:100%
+
+#main {
+ position: fixed;
+
 }
 #main ul{
+
    list-style-type: none;
-   margin: 0px;
+   margin:-top: 0px;
+   margin-bottom:10;
    padding: 0px;
-   width: 100%
-   background-color #f1f1f1;
+  float: left;
 } 
 #main ul li{
-	width: 80px;
+	width: 280px;
 	float: left;
 	background-color: grey;
+	position: relative;
+
 }
 
 #main li a{
 
 	display: block;
 	color: white;
-	padding: 8px 0px 8px 10px;
-	text-decoration: none;
+	padding: 8px 10px 8px 10px;
+	text-decoration: all;
 }
 
 #main li a:hover{
@@ -30,8 +35,14 @@ body {
 	background-color: #555;
 	color: white;
 }
+.content {
+ left:0;
+ right:0;
+ top:30px;
+ background:darkseagreen;
+}
+img{
+	width: 100%
+	margin-left: 20%;
 
-#main img{
-	width: 50%
-	background-color: grey;
 }
