@@ -1,5 +1,5 @@
 body {
-	background-color: gainsboro;
+	background-color: darkseagreen;
 }
 
 #main {
@@ -39,7 +39,7 @@ body {
  left:0;
  right:0;
  top:30px;
- background:darkseagreen;
+ background:gainsboro;
 }
 img{
 	width: 100%
