@@ -1,3 +1,9 @@
+<head> 
+<meta charset="utf-8">
+<title> Nouveau client </title>
+<link rel="stylesheet" type="text/css" href="sheet.css">
+</head>
+
 <form action="enregistrement.php" method="post" autocomplete="off"> <p>
 	Nom :
 	<input type="text" name="n" value=""/> </p>
@@ -33,7 +39,5 @@
 
 	<a href="connexion.php">J'ai deja un compte
 		</a>
-    	
 
     <a href="../index.html">Retour
-		</a>
