@@ -35,5 +35,5 @@
 		</a>
     	
 
-    <a href="index.php">Retour
+    <a href="../index.html">Retour
 		</a>
