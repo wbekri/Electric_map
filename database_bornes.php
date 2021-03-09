@@ -1,4 +1,6 @@
-
+<html>
+ <head>
+ </head>
 		<?php
 			
 			$vd = $_POST["Ville de depart"];
@@ -23,8 +25,10 @@
 			echo "r";
 			
 		?>
-		
-
+	<body>
+		<a href="map.html">Afficher la carte </a>
+	</body>
+</html>
 
 
 
