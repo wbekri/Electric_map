@@ -9,12 +9,22 @@
   </head>
   <body>
    <div id="map"></div>
+   <!--<p><a href="https://www.maptiler.com/license/maps/" target="_blank"&copy; 
+    Maptiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a></p>-->
    <script>
-   	var map = L.map('map').setView([0, 0],1);
+    var borne1= [43.286242,5.370056];
+   	var map = L.map('map').setView([43.286242,5.370056],6);
    	L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=3oa3J7TEkNh2fVNl36qz' , {
-   		attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
-   	}).addTo(map);
-  
+   		//attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+     maxZoom: 50
+   }).addTo(map);
+   // ajout d'un markeur
+    var marker = L.marker(borne1).addTo(map);
+    var circle = L.circle([43.286242,5.361972], {
+      color:'red',
+      fillOpacity: 0.2,
+      radius: 5000
+    }).addTo(map);
    </script>
 </body>
   </html>
