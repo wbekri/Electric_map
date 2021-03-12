@@ -6,12 +6,23 @@
 <title>Comparateur de voitures</title>
 </head>
 <body>
+	<p> comparateur des voitures  </p>
 	<?php
 		if( isset($_POST['search']) )
 		{
-			$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', '')
-			s
-			
+			$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', '');
+			$rep = $bdd->query('SELECT * FROM table 1 Where marque ="'.$_POST['marque'].'"');
+			while ($ligne = $rep ->fetch())
+			{
+				echo"<td>".$ligne['Marque']."</td>";
+				echo"<td>".$ligne['Modèle']."</td>";
+				echo"<td>".$ligne['prix']."</td>";
+				echo"<td>".$ligne['autonomie']."</td>";
+				echo"<td>".$ligne['puissance']."</td>";
+				echo"<td>".$ligne['recharge']."</td>";
+				echo"<td>".$ligne['consommation']."</td>";
+			}
+		$rep ->closeCursor();
 		}
 	?>
 
