@@ -18,6 +18,14 @@ body {
 	position: relative;
 
 }
+h1{
+	background-color: wheat;
+	opacity: 0.4;
+	text-align: center;
+	font-size: 40px;
+	margin: 0;
+
+}
 
 #main li a{
 
@@ -33,10 +41,10 @@ body {
 	color: white;
 }
 .content {
- left:0;
- right:0;
- top:30px;
- background:gainsboro;
+ left:50%;
+ right:50%;
+
+
 }
 img{
 	width: 100%
