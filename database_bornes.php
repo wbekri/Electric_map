@@ -3,26 +3,30 @@
  </head>
 		<?php
 			
-			$vd = $_POST["Ville de depart"];
-			echo "vd";
 			
-			$va = $_POST["Ville d'arrivée"];
-			echo "va";
+			echo "Ville de depart: ";
+			echo $_POST['vd'];
+			echo '<br/>';
+			echo "Ville d'arrivee: ";
+			echo $_POST['va'];
+			echo '<br/>';
 			
-			$v = $_POST["Ville"];
-			echo "v";
 			
-			$c1 = $_POST["Criteres 1"];
-			echo "c1";
+			echo "Ville :";
+			echo $_POST['v'];
+			echo '<br/>';
 			
-			$c2 = $_POST["Criteres 2"];
-			echo "c2";
+			echo "Critere 1 :";
+			echo $_POST['c1'];
+			echo '<br/>';
 			
-			$c3 = $_POST["Criteres 3"];
-			echo "c3";
+			echo "Critere 2 :";
+			echo $_POST['c2'];
+			echo '<br/>';
 			
-			$r = $_POST["Rayon"];
-			echo "r";
+			echo "Rayon :";
+			echo $_POST['r'];
+			echo '<br/>';
 			
 		?>
 	<body>

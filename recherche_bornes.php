@@ -19,17 +19,18 @@
    
 		<form action="database_bornes.php" method="post" autocomplete="off">
 		
-			<fieldset class="position">			
-				<legend>Recherche Simple</legend>
+		
 				
-				<label for="vd">Ville de depart</label>
-				<input type="text" id="vd" name="Ville de depart" value=""/> </p>
-				
-				<label for="va">Ville d'arrivee</label>
-				<input type="text" id="va" name="Ville d'arrivée" value="" placeholder="facultatif"/> </p>
+				<title>Recherche Simple</title>
+				<p>
+				Ville de depart:
+				<input type="text" name="vd" value=""/> </p>
+				<p>
+				Ville d'arrivee:
+				<input type="text" name="va" value="" placeholder="facultatif"/> </p>
 				
 				<p><input type="submit" value="Recherche"></p>	
-			</fieldset> 
+
 			
 			<p></p> <!--saut de ligne (à modifier)-->
 			
@@ -38,13 +39,13 @@
 				<legend>Recherche Avancée</legend>
 				
 				<label for="v">Ville</label>
-				<input type="text" id="v" name="Ville" value=""/> </p>
+				<input type="text" name="v" value=""/> </p>
 				
 				<label for="c1">Criteres 1</label>
-				<input type="text" id="c1" name="Criteres 1" value=""/> </p>
+				<input type="text" name="c1" value=""/> </p>
 				
 				<label for="c2">Criteres 2</label>
-				<input type="text" id="c2" name="Criteres 2" value=""/> </p>
+				<input type="text" name="c2" value=""/> </p>
 				
 				<label for="c3">Criteres 3</label>
 				<input type="text" id="c3" name="Criteres 3" value=""/> </p>
