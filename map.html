@@ -9,8 +9,10 @@
   </head>
   <body>
    <div id="map"></div>
-   <!--<p><a href="https://www.maptiler.com/license/maps/" target="_blank"&copy; 
-    Maptiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a></p>-->
+   <!--<p><a href="https://www.maptiler.com/license/maps/" 
+   target="_blank"&copy; 
+    Maptiler</a> 
+    <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a></p>-->
    <script>
     var borne1= [43.286242,5.370056];
    	var map = L.map('map').setView([43.286242,5.370056],6);
@@ -20,6 +22,7 @@
    }).addTo(map);
    // ajout d'un markeur
     var marker = L.marker(borne1).addTo(map);
+    var marker = L.marker([51.5, -0.09]).addTo(map);
     var circle = L.circle([43.286242,5.361972], {
       color:'red',
       fillOpacity: 0.2,

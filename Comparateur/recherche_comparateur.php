@@ -11,7 +11,7 @@
 			if ($nbrep > 0)  
 			{
 				echo "<p><h3>Voici les resultats de votre recherche :</h3></p>";
-				<div style="width : 100%; margin-top: 50px;">
+				
 					echo "<table border='1'>\n";
 					echo "<tr>\n";	
 					echo "<td><strong>Marque</strong></td>\n";				
@@ -22,7 +22,7 @@
 					echo "<td><strong>Recharge</strong></td>\n";
 					echo "<td><strong>Consommation</strong></td>\n";
 					echo "<tr>\n";
-				</div>
+				
 				while($rech =$rep ->fetch()) 
 				{
 					echo "<tr>\n";
