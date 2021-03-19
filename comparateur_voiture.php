@@ -22,6 +22,7 @@
 				echo"<td>".$ligne['recharge']."</td>";
 				echo"<td>".$ligne['consommation']."</td>";
 			}
+			echo'modification';
 		$rep ->closeCursor();
 		}
 	?>
