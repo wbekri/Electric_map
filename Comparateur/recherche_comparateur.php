@@ -2,7 +2,7 @@
 <?php
 		
 		$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', '');
-		$rep = $bdd->query("SELECT * FROM `table 1`  WHERE marque LIKE '".$_POST['marque']."'");
+		$rep = $bdd->query("SELECT * FROM voitureselectriques  WHERE marque LIKE '".$_POST['marque']."'");
 		
 		if ($rep) 
 		{
@@ -28,11 +28,11 @@
 					echo "<tr>\n";
 					echo "<td>".$rech['marque']."</td>\n";
 					echo "<td>".$rech['modele']."</td>\n";
-					/*echo "<td>".$rech['prix']."</td>\n";
+					echo "<td>".$rech['montant']."</td>\n";
 					echo "<td>".$rech['autonomie']."</td>\n";
 					echo "<td>".$rech['puissance']."</td>\n";
 					echo "<td>".$rech['recharge']."</td>\n";
-					echo "<td>".$rech['consommation']."</td\n>";*/
+					echo "<td>".$rech['consommation']."</td\n>";
 					echo "<tr>\n";
 				}
 				
