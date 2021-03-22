@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<link rel="stylesheet" href="../styles/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/sheet.css" type="text/css" media="screen" />
 	<meta charset="UTF-8">
 	<title>Article</title>
 </head>

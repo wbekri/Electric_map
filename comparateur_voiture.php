@@ -11,7 +11,7 @@
 		if( isset($_POST['search']) )
 		{
 			$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', '');
-			$rep = $bdd->query('SELECT * FROM table 1 Where marque ="'.$_POST['marque'].'"');
+			$rep = $bdd->query('SELECT * FROM voitureselectriques Where marque ="'.$_POST['marque'].'"');
 			while ($ligne = $rep ->fetch())
 			{
 				echo"<td>".$ligne['Marque']."</td>";
