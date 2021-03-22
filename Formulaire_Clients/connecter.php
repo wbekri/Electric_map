@@ -6,8 +6,8 @@
    <body>
 
 	<?php
-        echo 'Votre nom:'; 
-        echo $_POST['n'];
+        echo 'Votre email:'; 
+        echo $_POST['email'];
         echo '<BR>';
         ?> 
     </body>

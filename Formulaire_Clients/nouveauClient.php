@@ -24,7 +24,7 @@
 	<input type="text" name="num" value=""/> </p>
 	<p>
 	Adresse e-mail:
-	<input type="text" name="mail" value=""/> </p>
+	<input type="text" name="email" value=""/> </p>
     <p>
     Mot de passe :
 	<input type="password" name="mdp1" value=""/> </p>
@@ -39,5 +39,6 @@
 
 	<a href="connexion.php">J'ai deja un compte
 		</a>
+		</br>
 
     <a href="../index.html">Retour
