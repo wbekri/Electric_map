@@ -9,18 +9,32 @@
    </style>
   </head>
   <body>
+  
    
    <?php 
 		$bdd = new PDO('mysql:host=localhost;dbname=borne;charset=utf8','root', '');
-		//$rep = $bdd->query("SELECT * FROM `bornes`  WHERE ad_station LIKE '".$_POST['marque']."'");//
+		//$rep = $bdd->query(" SELECT * FROM `bornes`  WHERE ad_station LIKE '".$_POST['marque']."'");//
+		$vd = $_GET['vd'];
+		$va = $_GET['va'];
 		
+		if($vd== ""){
+			$vd ="xxx";
+			
+		}
+		if($va== ""){
+			$va ="xxx";
+			
+		}
+			
 		$rep = $bdd->query("
 		SELECT distinct Ylatitude, Xlongitude, ad_station FROM `bornes` 
-		WHERE (ad_station LIKE '%paris%' or ad_station LIKE '%montpellier%' ) 
-		and ( Ylatitude not LIKE '%*%' or Xlongitude not LIKE '%*%') 
+		WHERE (ad_station LIKE '%".$vd. "%'   or ad_station LIKE '%".$va. "%') 
+		and ( Ylatitude not LIKE '%*%' or Xlongitude not LIKE '%*%') ");
 		
-		 ");
 		//$bornes ="[[43.286242,5.370056], [43.288849,5.57308], [48.77024580, 1.19938130]]";
+		
+		if($vd !="xxx" or $va !="xxx"){
+			
 		$bornes ="[";
 		while ($ligne = $rep ->fetch()){
 			echo 
@@ -37,6 +51,15 @@
 		
 		echo 
 			"<script> console.log('".  $bornes ."')</script>";
+		
+		}else{
+			$bornes ="[[43.286242,5.370056], [43.288849,5.57308]]";
+		}
+		
+			
+		
+		
+		
    
 		
    ?>
