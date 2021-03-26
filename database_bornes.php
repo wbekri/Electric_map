@@ -30,7 +30,10 @@
 			
 		?>
 	<body>
-		<a href="map.html">Afficher la carte </a>
+		
+		
+		
+		<a href="map.php?vd=<?php echo $_POST['vd'] ?>&va=<?php echo $_POST['va'] ?>">Afficher la carte </a>
 	</body>
 </html>
 
