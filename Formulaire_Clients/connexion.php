@@ -10,10 +10,10 @@
 <form action="connecter.php" method="post" autocomplete="off">
 <p id="adresse">
 	Adresse e-mail:
-	<input type="text" name="email" value=""/> </p>
+	<input type="text" name="email" value="" required/> </p>
     <p id="adresse">
     Mot de passe :
-	<input type="password" name="mdp1" value=""/> </p>
+	<input type="password" name="mdp1" value="" required /> </p>
 	<p id="adresse">
 	<input type="submit" value="Envoyer">
 	</br>

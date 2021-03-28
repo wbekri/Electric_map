@@ -8,20 +8,20 @@
 <body>
 	<p> comparateur des voitures  </p>
 	<?php
-		$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', '');
+		$bdd = new PDO('mysql:host=localhost;dbname=;charset=utf8','root', '');
 		$rep = $bdd->query("SELECT * FROM `table 1`  WHERE marque LIKE '".$_POST['marque']."'");
 		
 		if ($rep) 
 		{
-<<<<<<< HEAD
-			$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', '');
+
+			$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8','root', 'root');
 			$rep = $bdd->query('SELECT * FROM voitureselectriques Where marque ="'.$_POST['marque'].'"');
 			while ($ligne = $rep ->fetch())
-=======
+
 			$nbrep = $rep ->rowCount();  
 		
 			if ($nbrep > 0)  
->>>>>>> f3ac34953adb80ea932b241a6db02bdb6d1a21ae
+
 			{
 				echo "<p><h3>Voici les resultats de votre recherche :</h3></p>";
 				

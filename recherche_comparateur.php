@@ -1,7 +1,7 @@
 
 <?php
 		
-		$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', 'root');
+		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8','root', 'root');
 		$rep = $bdd->query("SELECT * FROM voitureselectriques  WHERE marque LIKE '".$_POST['marque']."'");
 		
 		if ($rep) 
