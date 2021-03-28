@@ -11,7 +11,7 @@
   <body>
    
    <?php 
-		$bdd = new PDO('mysql:host=localhost;dbname=borne;charset=utf8','root', '');
+		$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', 'root');
 		//$rep = $bdd->query("SELECT * FROM `bornes`  WHERE ad_station LIKE '".$_POST['marque']."'");//
 		
 		$rep = $bdd->query("
