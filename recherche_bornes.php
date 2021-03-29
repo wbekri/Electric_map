@@ -9,14 +9,7 @@
    <body>
    <h1>Electric Map</h1>
 		<p>Trouvez des bornes de recharge pour votre voiture électrique dans tout le territoire français !</p>
-		<p>---text---</p>
-		<p>---text---</p>
-		<p>---text---</p>
-		
-   
-		
-   
-   
+	
 		<form action="database_bornes.php" method="post" autocomplete="off">
 		
 		

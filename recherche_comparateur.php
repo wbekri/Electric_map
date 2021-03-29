@@ -1,12 +1,12 @@
 
 <?php
 		
-		$bdd = new PDO('mysql:host=localhost;dbname=voitures_electriques;charset=utf8','root', 'root');
-		$rep = $bdd->query("SELECT * FROM voitureselectriques  WHERE marque LIKE '".$_POST['marque']."'");
+		$bdd = new PDO('mysql:host=localhost;dbname=electric_hybrid;charset=utf8','root', '');
+		$rep_marque = $bdd->query("SELECT * FROM voitureselectriques  WHERE marque LIKE '".$_POST['marque']."'");
 		
-		if ($rep) 
+		if ($rep_marque) 
 		{
-			$nbrep = $rep ->rowCount();  
+			$nbrep = $rep_marque ->rowCount();  
 		
 			if ($nbrep > 0)  
 			{
@@ -23,7 +23,7 @@
 					echo "<td><strong>Consommation</strong></td>\n";
 					echo "<tr>\n";
 				
-				while($rech =$rep ->fetch()) 
+				while($rech =$rep_marque ->fetch()) 
 				{
 					echo "<tr>\n";
 					echo "<td>".$rech['marque']."</td>\n";
@@ -36,7 +36,7 @@
 					echo "<tr>\n";
 				}
 				
-				$rep ->closeCursor ();
+				$rep_marque ->closeCursor ();
 				echo "</table>\n";		
 			}
 		

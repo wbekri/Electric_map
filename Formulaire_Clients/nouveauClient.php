@@ -6,10 +6,10 @@
 
 <form action="enregistrement.php" method="post" autocomplete="off"> <p>
 	Nom :
-	<input type="text" name="n" value=""/> </p>
+	<input type="text" name="n" value="" required /> </p>
 	<p>
 	Prénom :
-	<input type="text" name="p" value=""/> </p>
+	<input type="text" name="p" value="" required /> </p>
 	<p>
 	Marque de voiture :
 	<input type="text" name="mv" value=""/> </p>
@@ -24,13 +24,13 @@
 	<input type="text" name="num" value=""/> </p>
 	<p>
 	Adresse e-mail:
-	<input type="text" name="email" value=""/> </p>
+	<input type="text" name="email" value="" required /> </p>
     <p>
     Mot de passe :
-	<input type="password" name="mdp1" value=""/> </p>
+	<input type="password" name="mdp1" value="" required /> </p>
 	<p>
 	Confirmer mot de passe :
-	<input type="password" name="mdp2" value=""/> </p>
+	<input type="password" name="mdp2" value="" required="retapez le mot de passe"/> </p>
 	<p>
 	<input type="submit" value="Envoyer">
 	</br>

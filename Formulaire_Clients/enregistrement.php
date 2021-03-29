@@ -1,4 +1,6 @@
 <html>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" id="bootstrap-css">
+<link rel="stylesheet" type="text/css" href="css/sheet.css">
     <head>
 <title>New user</title> </head>
 <body> <?php

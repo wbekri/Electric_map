@@ -12,10 +12,15 @@
   
    
    <?php 
+<<<<<<< HEAD
 		$bdd = new PDO('mysql:host=localhost;dbname=borne;charset=utf8','root', '');
 		//$rep = $bdd->query(" SELECT * FROM `bornes`  WHERE ad_station LIKE '".$_POST['marque']."'");//
 		$vd = $_GET['vd'];
 		$va = $_GET['va'];
+=======
+		$bdd = new PDO('mysql:host=localhost;dbname=voitureelectrique;charset=utf8','root', 'root');
+		//$rep = $bdd->query("SELECT * FROM `bornes`  WHERE ad_station LIKE '".$_POST['marque']."'");//
+>>>>>>> f59b94b90d110ed7bb84a3686cf1c4d2849e56b2
 		
 		if($vd== ""){
 			$vd ="xxx";
