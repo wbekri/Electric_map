@@ -67,6 +67,6 @@ h1{
 #git
 {
 	position: relative ;
-	left: 52.5%;
+	left: 53%;
 	bottom: 7px;
 }
