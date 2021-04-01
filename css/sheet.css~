@@ -53,20 +53,76 @@ h1{
 #phone
 {
 	position: relative ;
-	left: 43%;
+	left: 35%;
 	bottom: 7px;
 }
 
 #mail
 {
 	position: relative ;
-	left: 48.5%;
+	left: 45.7%;
 	bottom: 7px;
 }
 
 #git
 {
 	position: relative ;
-	left: 53%;
+	left: 58%;
 	bottom: 7px;
+}
+
+.source
+{
+	font-size: 10px;
+	width: 20%;
+font-style: italic;
+background-color: #EAF0F3;			//#f8f9fa;
+}
+
+#contraintes
+
+{
+	position: absolute;
+	right: 0px;
+}
+#hydro
+{
+	float: left;
+	position: absolute;
+	left: 20%;
+	top: 24%;
+}
+
+#deuxieme
+{
+	float: left;
+	position: absolute;
+	left: 20%;
+	top: 39%;
+}
+
+#troisieme
+{
+	float: left;
+	position: absolute;
+	left: 20%;
+	top: 62%;
+}
+
+#quatrieme
+{
+	float: left;
+	position: absolute;
+	left: 20%;
+	top: 81%;
+}
+
+#message
+{
+	margin: 10px;
+}
+
+#merci
+{
+	text-align: center;
 }

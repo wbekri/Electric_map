@@ -53,9 +53,9 @@
 
 <br><br>
 
- <img src="images/phone.jpg  " alt=""width="2%" /> 
- <img src="images/mail.png  " alt="" width="2%" />	
- <img src="  images/gith.png" alt="" width="2%" />
+ <img src="images/phone.jpg  " alt=""width="2%" id="phone" /> 
+ <img src="images/mail.png  " alt="" width="2%" id="mail" />	
+ <img src="  images/gith.png" alt="" width="2%" id="git" />
 
 <table align="center" id="tableC">
 
@@ -73,14 +73,20 @@
 <tr>
 
 <th><pre>Appelez-nous   </pre></th>    
-<th> <pre>E-mail   </pre> </th>
-<th> <pre>Github</pre> </th>
+<th> <pre>      E-mail   </pre> </th>
+<th> <pre>  Github</pre> </th>
 
 </tr>
 
 </div>
 
+<tr>
 
+<td><pre>04 12 34 56 78   </pre></td>    
+<td> <pre>electricmap@hotmail.com   </pre> </td>
+<td> <pre>Electric_map</pre> </td>
+
+</tr>
 
 
 
