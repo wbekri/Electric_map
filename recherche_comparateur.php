@@ -1,9 +1,37 @@
+<?php include ('fonctions.php'); ?>
 
 <?php
 		
-		$bdd = new PDO('mysql:host=localhost;dbname=electric_hybrid;charset=utf8','root', '');
-		$rep_marque = $bdd->query("SELECT * FROM voitureselectriques  WHERE marque LIKE '".$_POST['marque']."'");
+		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8','root', '');
 		
+		
+		if(!empty ($_POST['marque']) && !empty($_POST['moteur']))
+		{
+			
+			$rep_mm = $bdd->query("SELECT * FROM voitures  WHERE marque LIKE '".$_POST['marque']."' AND moteur LIKE '".$_POST['moteur']."'");
+			comparateur($rep_mm);
+		}
+		
+		elseif(!empty ($_POST['marque']) && empty($_POST['moteur']))
+		{
+			$rep_mm = $bdd->query("SELECT * FROM voitures WHERE marque LIKE '".$_POST['marque']."'");
+			comparateur($rep_mm);
+		}
+		elseif(empty ($_POST['marque']) && !empty($_POST['moteur']))
+		{
+			$rep_mm = $bdd->query("SELECT * FROM voitures  WHERE moteur LIKE '".$_POST['moteur']."'");
+			comparateur($rep_mm);
+		}
+			
+		
+ 
+    
+		
+?>
+
+<?php
+
+/*
 		if ($rep_marque) 
 		{
 			$nbrep = $rep_marque ->rowCount();  
@@ -45,4 +73,5 @@
 				echo "<p><h3>Aucun resultat trouvé</h3></p>";
 			}	
 		}
+		*/
 ?>

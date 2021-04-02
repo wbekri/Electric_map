@@ -1,9 +1,35 @@
+<?php include ('C:\wamp64\www\Electric_map\fonctions.php'); ?>
+
 <html>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" id="bootstrap-css">
-<link rel="stylesheet" type="text/css" href="css/sheet.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" id="bootstrap-css">
+	<link rel="stylesheet" type="text/css" href="css/sheet.css">
+	
     <head>
-<title>New user</title> </head>
-<body> <?php
+	<title>Enregistrement</title> 
+	
+	<?php
+		if($_POST['mdp1'] != $_POST['mdp2'] ) 
+		{
+			echo '<h3>les mots de passes ne sont pas identiques vous allez etre rediriger vers la page inscription</h3>';
+			echo "<meta http-equiv='Refresh' content='3;URL=nouveau.html'>";
+		}	
+		else
+		{
+			enregistrer($_POST['n'], $_POST['p'], $_POST['mv'], $_POST['modv'], $_POST['num'], $_POST['email'], $_POST['mdp1']);  
+			echo "<meta http-equiv='Refresh' content='3;URL=/Electric_map/index.php'>";
+		}
+    ?>  
+	
+	</head>
+	
+	<body> 
+        <a href="../index.php"> Retour </a>
+    </body>
+</html>
+
+
+
+<?php /*
             echo 'Votre nom:'; 
             echo $_POST['n'];
             echo '<BR>';
@@ -30,10 +56,9 @@
         
         
     $bdd = new PDO('mysql:host=localhost;dbname=electric_map','root', 'root');
-	echo 'connection electric_map ok ok </br>';
 	
-	$sql = "INSERT INTO persons (nom, prenom, mv, modv, adr, num, email, mdp1)
-	 VALUES(:nom, :prenom, :mv, :modv, :adr, :num, :email, :mdp1)";
+	
+	$sql = "INSERT INTO persons (nom, prenom, mv, modv, adr, num, email, mdp1) VALUES(:nom, :prenom, :mv, :modv, :adr, :num, :email, :mdp1)";
     $stmt = $bdd->prepare($sql);
     
     
@@ -50,9 +75,4 @@
     // Execute the prepared statement
     $stmt->execute();
     echo "Records inserted successfully.";
-    ?>
-    
-        <a href="../index.html">Retour
-		</a>
-    </body>
-</html>
+    ?>*/
