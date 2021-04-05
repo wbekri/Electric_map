@@ -18,7 +18,10 @@
 				<p>
 				Ville d'arrivee:
 				<input type="text" name="va" value="" placeholder="facultatif"/> </p>
+				Code postal:
+				<input type="int" name="cd" value="" placeholder="facultatif"/> </p>
 				<p><input type="submit" value="Recherche"></p>	
+	
    </body>
    
 </html>

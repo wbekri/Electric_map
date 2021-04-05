@@ -57,7 +57,7 @@
 		
    ?>
    
-   <div id="map"> </div> 
+   <div id="map"> </div> //mettre dans le css : code ligne 8
   
    <script>
    
@@ -93,7 +93,7 @@
 		return map;
 	}
 	
-// calcul des points moyennes entre deux villes 
+
 	
    	function pointMoyCalculator(points){
 		var yLatMoy =0;
