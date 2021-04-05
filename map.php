@@ -13,10 +13,9 @@
    
    <?php 
 		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8','root', '');
-<<<<<<< HEAD
+
 		//$rep = $bdd->query(" SELECT * FROM `bornes`  WHERE ad_station LIKE '".$_POST['marque']."'");//
-=======
->>>>>>> 58d8c1de546872f919654b98dc8b4fc368e6e510
+
 		$vd = $_GET['vd'];
 		$va = $_GET['va'];
 		
