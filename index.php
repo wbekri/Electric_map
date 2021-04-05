@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,37 +33,52 @@
           <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-	
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
+     
 		
-        <li class="nav-item">
-          <a class="nav-link" href="nouvelles.html">About</a>
-        </li>
 		
-         <li class="nav-item">
-          <a class="nav-link" href="formulaire_comparateur.php">Comparateur</a>
-        </li>
+		<?php if (!isset($_SESSION['autoriser'])) { ?>
+					<ul class="navbar-nav ml-auto">	
+						<li class="nav-item">
+						<a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
+						</li>
+					
+						<li class="nav-item">
+						<a class="nav-link" href="Formulaire_Clients/connexion.php">Connexion</a>
+						</li> 
+					</ul>
 		
-        <li class="nav-item">
-          <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
-        </li>
-		
-		<li class="nav-item">
-          <a class="nav-link" href="gps.html">Itinéraire</a> 
-        </li>
-		
-        <li class="nav-item">
-          <a class="nav-link" href="pageContact.html">Contact</a>
-        </li>
-		
-         <li class="nav-item">
-          <a class="nav-link" href="Formulaire_Clients/connexion.php">Connexion</a>
-        </li>
-		
-      </ul>
+		<?php } else { ?>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+						</li>
+					
+						<li class="nav-item">
+						<a class="nav-link" href="nouvelles.html">About</a>
+						</li>
+					
+						<li class="nav-item">
+						<a class="nav-link" href="formulaire_comparateur.php">Comparateur</a>
+						</li>
+					
+						<li class="nav-item">
+						<a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
+						</li>
+					
+						<li class="nav-item">
+						<a class="nav-link" href="gps.html">Itinéraire</a> 
+						</li>
+					
+						<li class="nav-item">
+						<a class="nav-link" href="pageContact.html">Contact</a>
+						</li>
+					
+						<li class="nav-item">
+						<a class="nav-link" href="Formulaire_Clients/deconnexion.php">Deconnexion</a>
+						</li> 
+					</ul>		
+			 <?php } ?>
+			 
     </div>
   </div>
 </nav>

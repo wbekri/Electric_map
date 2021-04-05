@@ -50,10 +50,6 @@ h1{
 
 }
 
-<<<<<<< HEAD
-#carte{
-    height: 80vh;
-=======
 #phone
 {
 	position: relative ;
@@ -129,6 +125,4 @@ background-color: #EAF0F3;			//#f8f9fa;
 #merci
 {
 	text-align: center;
-	font-size: 20px;
->>>>>>> 58d8c1de546872f919654b98dc8b4fc368e6e510
 }
