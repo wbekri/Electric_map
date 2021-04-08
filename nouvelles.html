@@ -10,15 +10,27 @@
       <script src="js/bootstrap.min.js"></script>
    </head>
    <body>  
-   <h1>Electric Map</h1> 
-
-   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
+      <button type="button" class="xs-buttons pull-left btn btn-clear" data-toggle="collapse" data-target="#nav-right">
+ <img id="logo" src="images/logo.png" />
+<style>
+  #logo {
+    width : 80px;
+  }
+</style>
+</a>
+    
     <a class="navbar-brand" href="#">ELECTRIC MAP</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
+      <style>
+        #navbarResponsive{
+          margin-left : 20%;
+        }
+      </style>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
@@ -27,84 +39,97 @@
           <a class="nav-link" href="nouvelles.html">About</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="comparateur_voiture.php">Infos</a>
+          <a class="nav-link" href="formulaire_comparateur.php">Comparateur</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="recherche_bornes.php">Map</a>
+          <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
+        </li>
+    <li class="nav-item">
+          <a class="nav-link" href="gps.html">Itinéraire</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pageContact.html">Contact</a>
+          <a class="nav-link" href="infoCovid.html">Covid</a>
         </li>
       </ul>
-    </div>
+         <div class="nav navbar-nav" id="member_header" role="presentation">
+<a href="Formulaire_Clients/connexion.php" class="btn btn-info" data-operation="connexion">
+<span class="cmp-icon icon-cm-login"></span>
+<span>Connexion</span>
+</a>
+<a href="" class="btn btn-success" data-operation="deconnexion">
+<span>Deconnexion</span>
+</a>
+</div>
+
   </div>
 </nav>
-   <h2>Bienvenu aux Fun Facts des voitures &eacute;lectriques!
-   </h2>
-   <p> M&ecirc;me si c'est difficile de le croire, la premi&egrave;re voiture 
-   &eacute;lectrique a &eacute;t&eacute; vendue &ccedil;a fait presque deux si&egrave;cles, 
-   pr&eacute;cis&eacute;ment en 1861. Maintenant il y a d&eacute;j&agrave; des 
-   centaines des voitures commercialis&eacute;es partout dans le monde.
-   </p>
-   
- <br>
- 
- <h3> Bonus écologique </h3>
- 
- <p>
-	Vous pouvez bénéficier de deux aides à l'achat de véhicules peu polluants, cumulables entre elles : le bonus écologique et la prime à la conversion.
 
-Le bonus écologique est une aide d'un montant maximum de 7 000 € pour l'achat d'un véhicule électrique neuf ou d'occasion ou d'un véhicule hybride rechargeable neuf. 
-<br>Il existe également un bonus jusqu'à 50 000 € pour l'achat d'un poids lourd, autobus ou autocar électrique ou hydrogène neuf. 
 
- </p>
  
- 
- <p>
- 
- L'objectif de la prime à la conversion est d'aider tous les Français, particuliers ou professionnels, à acheter un véhicule neuf ou d'occasion en échange de la mise au rebut d'un vieux véhicule. 
- <br> Vous pouvez bénéficier jusqu'à 3 000 € pour l'achat d'un véhicule thermique neuf ou d'occasion et jusqu'à 5 000 € pour l'achat d'un véhicule électrique ou hybride rechargeable neuf ou d'occasion.
- 
- </p>
- 
- 
- <div class="source">
- 
-Le texte provient de la page suivante : <a href="https://www.primealaconversion.gouv.fr/dboneco/accueil/"> 
-Source </a>
-
-</div>
+<div class="how-section1">
 
 
 
  <br> <br>
- 
- 
- 
-<h3>La batterie</h3>
+                    <div class="row">
+                        <div class="col-md-6 how-img">
+                            <img src="images/batterie.jpg" class="rounded-circle img-fluid" alt=""/>
+                        </div>
+                        <div class="col-md-6">
+                      
+                       <h4 class="subheading">La Batterie</h4>
+                        <p class="text-muted">
+                       La capacité d’une batterie correspond à l’énergie électrique maximale stockée suite à une charge complète. 
+                      Bien qu’offrant une autonomie plus grande, une batterie de grande capacité requiert un temps de charge plus long pour se recharger entièrement. 
+                      <br>Vous pouvez bien sûr recharger votre batterie avant que celle-ci ne soit complètement vide : il est d’ailleurs préconisé de ne pas
+                      descendre sous les 20% de charge pour ne pas 
+                        <br>endommager votre batterie, et de faire des recharges régulières pour se maintenir entre 40 et 80% de la charge (on parle de « biberonnage » de la batterie).
+                         </p>
+                      Le texte provient de la page suivante : <a href="https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique?&utm
+                      _source=google&utm_medium=cpc&utm_campaign=9671839347&utm_content=103049174087&tracking=search&keyword
+                       =%2Bborne%20%2Belectrique%20%2Bpour%20%2Bvoiture&gclid=EAIaIQobChMI6b7es9Pc7wIVke5RCh3FpwbcEAAYASAAEgLoKfD_BwE#type-chargeur"> 
+                      Source </a>
+                       </div>
 
-<p>
-La capacité d’une batterie correspond à l’énergie électrique maximale stockée suite à une charge complète. 
-Bien qu’offrant une autonomie plus grande, une batterie de grande capacité requiert un temps de charge plus long pour se recharger entièrement. 
-<br>Vous pouvez bien sûr recharger votre batterie avant que celle-ci ne soit complètement vide : il est d’ailleurs préconisé de ne pas
- descendre sous les 20% de charge pour ne pas 
-<br>endommager votre batterie, et de faire des recharges régulières pour se maintenir entre 40 et 80% de la charge (on parle de « biberonnage » de la batterie).
-</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+          <h4 class="subheading">Bonus écologique </h4>
+      <p class="text-muted">
+  Vous pouvez bénéficier de deux aides à l'achat de véhicules peu polluants, cumulables entre elles : le bonus écologique et la prime à la conversion.
 
-<div class="source">
- 
-Le texte provient de la page suivante : <a href="https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique?&utm
-_source=google&utm_medium=cpc&utm_campaign=9671839347&utm_content=103049174087&tracking=search&keyword
-=%2Bborne%20%2Belectrique%20%2Bpour%20%2Bvoiture&gclid=EAIaIQobChMI6b7es9Pc7wIVke5RCh3FpwbcEAAYASAAEgLoKfD_BwE#type-chargeur"> 
+Le bonus écologique est une aide d'un montant maximum de 7 000 € pour l'achat d'un véhicule électrique neuf ou d'occasion ou d'un véhicule hybride rechargeable neuf. 
+<br>Il existe également un bonus jusqu'à 50 000 € pour l'achat d'un poids lourd, autobus ou autocar électrique ou hydrogène neuf. 
+ </p>
+ <p class="text-muted">L'objectif de la prime à la conversion est d'aider tous les Français, particuliers ou professionnels, à acheter un véhicule neuf ou d'occasion en échange de la mise au rebut d'un vieux véhicule. 
+ <br> Vous pouvez bénéficier jusqu'à 3 000 € pour l'achat d'un véhicule thermique neuf ou d'occasion et jusqu'à 5 000 € pour l'achat d'un véhicule électrique ou hybride rechargeable neuf ou d'occasion.
+ </p>
+ Le texte provient de la page suivante : <a href="https://www.primealaconversion.gouv.fr/dboneco/accueil/"> 
+Source </a>
+                        </div>
+                        <div class="col-md-6 how-img">
+                            <img src="images/car.png" alt=""/>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 how-img">
+                             <img src="images/primovoiture.jpg" class="rounded-circle img-fluid" alt=""/>
+                        </div>
+                             <div class="col-md-6">
+                               <h4 class="subheading">Histoire de voiture électrique</h4>
+  <p class="text-muted">La toute première voiture électrique date de 1834. Le moteur à explosion, plus complexe, a vu son émergence plus tard, en 1861. La première commercialisation d'un véhicule électrique date de 1852. Mais ces premiers modèles n'utilisent pas de batterie électrique rechargeable. L'invention en 1859 de la batterie rechargeable au plomb acide par Gaston Planté puis les travaux de Camille Faure permettent à la voiture électrique d'avoir un succès encore jamais égalé à notre siècle.
+ <br> Qui dit voiture électrique dit point de recharge... sauf qu'à l'époque, on parle de colonne de charge pour automobile électrique.
+ </p>
+
+Le texte provient de la page suivante : <a href="http://www.avere-france.org/Site/Article/?article_id=5871"> 
 Source </a>
 
 </div>
-
-
-
- 
-	</body>   
-
+</div>
+                   
+  </body>  
 
 </html>
 

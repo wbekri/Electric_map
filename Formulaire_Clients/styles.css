@@ -1,7 +1,7 @@
-
 body{
-    background: #67BE4B;
+    background-origin: green;
 }
+      
 #container{
     width:400px;
     margin:0 auto;
