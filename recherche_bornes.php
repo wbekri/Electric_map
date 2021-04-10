@@ -64,7 +64,7 @@
 <br><br>
 <div style="width : 100%; margin-top: 50px;">
 
-		<form action="database_bornes.php" method="post" autocomplete="off" style="margin-left: auto;margin-right: auto;width: 200px;">
+		<form action="map.php" method="post" autocomplete="off" style="margin-left: auto;margin-right: auto;width: 200px;">
 		<title>Recherche Simple</title>
 		
 				<p>

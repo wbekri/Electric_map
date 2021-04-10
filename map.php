@@ -6,18 +6,18 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <style>
     #map {position: absolute; top:0; bottom: 0; left:0; right:0;} 
-   </style>
+  </style>
   </head>
   <body>
   
    
    <?php 
-		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8','root', 'root');
+		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8','root', '');
 
 		//$rep = $bdd->query(" SELECT * FROM `bornes`  WHERE ad_station LIKE '".$_POST['marque']."'");//
 
-		$vd = $_GET['vd'];
-		$va = $_GET['va'];
+		$vd = $_POST['vd'];
+		$va = $_POST['va'];
 		
 		if($vd== ""){
 			$vd ="xxx";

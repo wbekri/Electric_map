@@ -1,7 +1,7 @@
 <?php
 	function comparateur($requete)
 	{
-		if ($requete ->rowCount() > 0)  
+		if ($requete -> rowCount() > 0)  
 			{
 					echo "<p><h3>Voici les resultats de votre recherche :</h3></p>";
 				
@@ -20,6 +20,8 @@
 				
 				while($rech = $requete ->fetch()) 
 				{
+					//echo $rech;
+				
 					echo "<tr>\n";
 					echo "<td>".$rech['marque']."</td>\n";
 					echo "<td>".$rech['modele']."</td>\n";
@@ -29,7 +31,7 @@
 					echo "<td>".$rech['recharge']."</td>\n";
 					echo "<td>".$rech['consommation']."</td\n>";
 					echo "<td>".$rech['moteur']."</td\n>";
-					//echo "<td>".$rech['url']."</td>"; 	
+					//echo "<td><img src='".$rech['url']."'/></td>"; 	
 					echo "<tr>\n";
 				}
 				
@@ -44,7 +46,7 @@
 	
 	function getBD()
 	{
-		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8', 'root', 'root');
+		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8', 'root', '');
 		return $bdd;
 	}
 	

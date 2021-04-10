@@ -24,6 +24,7 @@
 				if($check->rowCount() > 0) 
 				{
 					$_SESSION['autoriser'] = "oui";
+					
 					echo "<h3>Connexion réussi vous allez etre rediriger vers la page d'acceuil</h3>";
 					echo "<meta http-equiv='Refresh' content='3;URL=/Electric_map/index.php'>";					
 				} 
