@@ -94,7 +94,7 @@ background-color: #EAF0F3;
 	float: left;
 	position: absolute;
 	left: 20%;
-	top: 36%;
+	top: 37%;
 }
 
 #deuxieme
@@ -102,7 +102,7 @@ background-color: #EAF0F3;
 	float: left;
 	position: absolute;
 	left: 20%;
-	top: 51%;
+	top: 50%;
 }
 
 #troisieme
@@ -118,7 +118,7 @@ background-color: #EAF0F3;
 	float: left;
 	position: absolute;
 	left: 20%;
-	top: 93%;
+	top: 92%;
 }
 
 #message
