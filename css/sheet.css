@@ -94,7 +94,7 @@ background-color: #EAF0F3;
 	float: left;
 	position: absolute;
 	left: 20%;
-	top: 24%;
+	top: 37%;
 }
 
 #deuxieme
@@ -102,7 +102,7 @@ background-color: #EAF0F3;
 	float: left;
 	position: absolute;
 	left: 20%;
-	top: 39%;
+	top: 52%;
 }
 
 #troisieme
@@ -110,7 +110,7 @@ background-color: #EAF0F3;
 	float: left;
 	position: absolute;
 	left: 20%;
-	top: 62%;
+	top: 75%;
 }
 
 #quatrieme
@@ -118,7 +118,7 @@ background-color: #EAF0F3;
 	float: left;
 	position: absolute;
 	left: 20%;
-	top: 81%;
+	top: 94%;
 }
 
 #message
@@ -154,5 +154,11 @@ background-color: #EAF0F3;
 }
 .how-img img{
     width: 70%;
+}
+
+#bodyCovid
+
+{
+	padding-top: 100px;
 }
 
