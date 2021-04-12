@@ -54,7 +54,7 @@
 			"<script> console.log('".  $bornes ."')</script>";
 		
 		}else{
-			echo "xcvhjkhgffghjkhvcvj";
+			echo "veuillez mettre le nom d'une ville svp";
 		}
 
 		
@@ -70,12 +70,12 @@
 	var bornes = <?php echo $bornes;  ?>;
 	
 	
-	// etape 1 : creation d'une carte centrée sur un point
+	// creation d'une carte centrée sur un point
 	function mapViewSetter(yLat, xLon, zoomLevel){
 		return L.map('map').setView([yLat,xLon],zoomLevel);
 	};
 	
-	//etape 2 : ajout des tuiles (carreaux de font d'ecran) de googleMap à la carte
+	//ajout des tuiles (carreaux de font d'ecran) de googleMap à la carte
 	function addTileLayerToMap(map, maxZoom){
 		L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=3oa3J7TEkNh2fVNl36qz' , {
 			//attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
@@ -85,13 +85,17 @@
 		return map;
 	};
 	
-	// etape 3 : ajout des points à la carte
+	// ajout des points à la carte
 	function addPointsToMap(map, points){
 	// points ressemble à : [ [yLat, xLon], [43.288849,5.57308], ...  ]
 		
 		for (var i = 0; i < points.length; i++) {
 			L.marker(points[i]).addTo(map);
 		}
+/*let marker = L.marker([agence[0].lat, agence[1].lon]).addTo(map)
+
+// On met le popup
+marker.bindPopup(agence[1].map)*/
 		
 		return map;
 	}
