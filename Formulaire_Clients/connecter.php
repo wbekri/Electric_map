@@ -24,6 +24,8 @@
 				if($check->rowCount() > 0) 
 				{
 					$_SESSION['autoriser'] = "oui";
+					$_SESSION['email'] = $email;
+					
 		?>	
 					<script> alert('Connexion réussi'); </script>
 		<?php		

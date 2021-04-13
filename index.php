@@ -13,7 +13,7 @@
 </head>
 <body >
 
-	<h1>Electric Map </h1>
+	<h1>Electric Map Bonjour <?php$_SESSION['email']?> </h1>
 <!---<div id="main">
 <ul>
 	<li><a href="#Acceuil">Acceuil</a></li>
@@ -100,7 +100,7 @@
 </header>
 <div class="content">
 <p>
-Electric Map est une application web pour repérer les bornes de recharge  pour véhicules électriques à proximité, 
+Electric Map <?php$_SESSION['autoriser']?> est une application web pour repérer les bornes de recharge  pour véhicules électriques à proximité, 
 Elle propose la cartographie de référence pour trouver les bornes de recharge en France. 
 </p>
 </div>
