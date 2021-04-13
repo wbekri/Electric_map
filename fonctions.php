@@ -3,40 +3,48 @@
 	{
 		if ($requete -> rowCount() > 0)  
 			{
-					echo "<p><h3>Voici les resultats de votre recherche :</h3></p>";
+	?>	
+			  
+               <br><br><br><br><br>
+
+                 <body>
+			   
 				
-					echo "<table border='4'>\n";
-					echo "<tr>\n";	
-					echo "<td><strong>Marque</strong></td>\n";				
-					echo "<td><strong>Modele</strong></td>\n";
-					echo "<td><strong>Prix</strong></td>\n";
-					echo "<td><strong>Autonomie</strong></td>\n";
-					echo "<td><strong>Puissance</strong></td>\n";
-					echo "<td><strong>Recharge</strong></td>\n";
-					echo "<td><strong>Consommation</strong></td>\n";
-					echo "<td><strong>Motorisation</strong></td>\n";
-					//echo "<td><strong>Image</strong></td>\n";
-					echo "<tr>\n";
+				<table border='1'>
+					  <thead>
+					  	<tr>	
+					<th>Marque</th>				
+					<th>Modele</th>
+					<th>Prix</th>
+					<th>Autonomie</th>
+					<th>Puissance</th>
+					<th>Recharge</th>
+					<th>Consommation</th>
+					<th>Motorisation</th>
+					  </tr>
+					</thead>
+				<?php
 				
 				while($rech = $requete ->fetch()) 
 				{
-					//echo $rech;
-				
-					echo "<tr>\n";
-					echo "<td>".$rech['marque']."</td>\n";
-					echo "<td>".$rech['modele']."</td>\n";
-					echo "<td>".$rech['prix']."</td>\n";
-					echo "<td>".$rech['autonomie']."</td>\n";
-					echo "<td>".$rech['puissance']."</td>\n";
-					echo "<td>".$rech['recharge']."</td>\n";
-					echo "<td>".$rech['consommation']."</td\n>";
-					echo "<td>".$rech['moteur']."</td\n>";
-					//echo "<td><img src='".$rech['url']."'/></td>"; 	
-					echo "<tr>\n";
+				?>
+				  <tdoby>
+				  <tr><td><?php echo"".$rech['marque'];?></td>
+					<td><?php echo"".$rech['modele'];?></td>
+					<td><?php echo"".$rech['prix'];?></td>
+                    <td><?php echo"".$rech['autonomie'];?></td>
+					<td><?php echo"".$rech['puissance'];?></td>
+					<td><?php echo"".$rech['recharge'];?></td>
+					<td><?php echo"".$rech['consommation'];?></td>
+					<td><?php echo"".$rech['moteur'];?></td></tr>
+					</tdoby>	
+				 <?php
 				}
 				
-				$requete ->closeCursor ();
-				echo "</table>\n";	
+				$requete ->closeCursor (); ?>
+				</table>
+			</body>
+			 <?php	
 			}
 			else 
 			{
@@ -46,7 +54,7 @@
 	
 	function getBD()
 	{
-		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8', 'root', '');
+		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8', 'root', 'root');
 		return $bdd;
 	}
 	
@@ -69,3 +77,36 @@
 	
 ?>
 
+<style>
+
+ th {
+ 	background: #39ba92;
+ 	color: white;
+ 	text-transform: uppercase;
+ 	font-family: 'Roboto', sans-serif;
+
+ }
+ tr: nth-child(odd){
+ 	color: #eeeeee;
+ }
+ td{
+ 	font-family: 'Open Sans', sans-serif;
+ }
+  th, td{
+  padding: 12px 15px;
+ }
+ table{
+ 	position: absolute;
+ 	z-index: 2;
+ 	left: 50%;
+ 	top:50%;
+ 	transform: translate(-50%,-50%);
+ 	width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    text-align: center;
+    background: #fafafa;
+ }
+</style>

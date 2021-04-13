@@ -1,4 +1,4 @@
-<?php include ('C:\wamp64\www\Electric_map\fonctions.php'); ?>
+<?php include ('.\fonctions.php'); ?>
 
 <html>
 

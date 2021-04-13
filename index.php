@@ -14,37 +14,43 @@
 <body >
 
 	<h1>Electric Map </h1>
-<!---<div id="main">
-<ul>
-	<li><a href="#Acceuil">Acceuil</a></li>
-	<li><a href="nouvelles.html">Nouvelles</a></li>
-	<li><a href="Comparateur/formulaire_comparateur.php">Comparateur</a></li>
-	<li><a href="recherche_bornes.html">Map</a></li>
-	<li><a href="pageContact.html">Contacts</a></li>
-	<li><a href="Formulaire_Clients/connexion.php">Connexion</a></li>
-<<<<<<< HEAD
-	<li><a href="Formulaire_Clients/nouveauClient.php">S'inscrire</a></li> !--->
 
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
+      <button type="button" class="xs-buttons pull-left btn btn-clear" data-toggle="collapse" data-target="#nav-right">
+ <img id="logo" src="images/logo.png" />
+<style>
+  #logo {
+    width : 80px;
+  }
+</style>
+</a>
+    
     <a class="navbar-brand" href="#">ELECTRIC MAP</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
+      <style>
+        #navbarResponsive{
+          margin-left : 20%;
+        }
+      </style>
      
 		
 		
 		<?php if (!isset($_SESSION['autoriser'])) { ?>
 					<ul class="navbar-nav ml-auto">	
-						<li class="nav-item">
+						<li class="nav-item active">
 						<a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
 						</li>
 					
-						<li class="nav-item">
-						<a class="nav-link" href="Formulaire_Clients/connexion.php">Connexion</a>
-						</li> 
+						  <div class="nav navbar-nav" id="member_header" role="presentation">
+              <a href="Formulaire_Clients/connexion.php" class="btn btn-info" data-operation="connexion">
+             <span class="cmp-icon icon-cm-login"></span>
+              <span>Connexion</span>
+         </a>
+        </div>
 					</ul>
 		
 		<?php } else { ?>
@@ -70,13 +76,16 @@
 						</li>
 					
 						<li class="nav-item">
-						<a class="nav-link" href="pageContact.html">Contact</a>
+						<a class="nav-link" href="infcovid.html">Contact</a>
 						</li>
-					
-						<li class="nav-item">
-						<a class="nav-link" href="Formulaire_Clients/deconnexion.php">Deconnexion</a>
-						</li> 
-					</ul>		
+
+					</ul>	
+          <div class="nav navbar-nav" id="member_header" role="presentation">
+
+<a href="Formulaire_Clients/deconnexion.php" class="btn btn-success" data-operation="deconnexion">
+<span>Deconnexion</span>
+</a>
+</div>	
 			 <?php } ?>
 			 
     </div>
@@ -98,12 +107,7 @@
     
   </div>
 </header>
-<div class="content">
-<p>
-Electric Map est une application web pour repérer les bornes de recharge  pour véhicules électriques à proximité, 
-Elle propose la cartographie de référence pour trouver les bornes de recharge en France. 
-</p>
-</div>
+
 
 </body>
 

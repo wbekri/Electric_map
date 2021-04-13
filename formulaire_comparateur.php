@@ -68,14 +68,16 @@
 			<form method="post" action="recherche_comparateur.php" style="margin-left: auto;margin-right: auto;width: 200px;">
 			
 				<p> Marque : <input type="text" name="marque" value=""/> </p>
-				<p> Type Moteur : <input type="text" name="moteur" value=""/> </p>
-
+				<p> 
+         <input type="radio" name="moteur" value="moteur"> Electrique     
+          <input type="radio" name="moteur" value="moteur"> Hybride </p>
+              
 				<input type="submit" value="recherche">
 				
 			</form>
 		</div>
   <div class="voitures">
-		<div id="voiture1">
+		<div id="voiture1" >
       <img src="https://ev.saabre.com/storage/app/uploads/public/5f2/d56/cc4/thumb_1139_300_200_0_0_auto.jpg">
       <h3> Renault Zoe </h3>
       <p>32500 €</p>
@@ -106,6 +108,9 @@
       <p> 41150 € </p>
     </div>
   </div>
+
+</script>
+
   <style>
     .voitures{
   display: grid;
