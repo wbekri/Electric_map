@@ -158,13 +158,19 @@
 
 				return map;
 			};
-
+              var greenIcon = L.icon({
+                   iconUrl: 'images/carr.png',
+                    iconSize:     [45, 45], // size of the icon
+                     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+                       shadowAnchor: [4, 62],  // the same for the shadow
+                       popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                     });
 			// ajout des points à la carte
 			function addPointsToMap(map, points){
 			// points ressemble à : [ [yLat, xLon], [43.288849,5.57308], ...  ]
 				
 				for (var i = 0; i < points.length; i++) {
-					L.marker(points[i]).addTo(map);
+					L.marker(points[i], {icon: greenIcon}).addTo(map);
 				}
 			/*let marker = L.marker([agence[0].lat, agence[1].lon]).addTo(map)
 
