@@ -66,8 +66,8 @@
 			
 				<p> Marque : <input type="text" name="marque" value=""/> </p>
 				<p> 
-         <input type="radio" name="moteur" value="moteur"> Electrique     
-          <input type="radio" name="moteur" value="moteur"> Hybride </p>
+             Moteur : <input type="text" name="moteur" value="" placeholder="Elerctrique Ou Hybride">      
+           </p>
               
 				<input type="submit" value="recherche">
 				

@@ -32,33 +32,55 @@
           margin-left : 20%;
         }
       </style>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nouvelles.html">About</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="formulaire_comparateur.php">Comparateur</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link" href="gps.html">Itinéraire</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="infoCovid.html">Covid</a>
-        </li>
-      </ul>
-         <div class="nav navbar-nav" id="member_header" role="presentation">
+       <?php if (!isset($_SESSION['autoriser'])) { ?>
+          <ul class="navbar-nav ml-auto"> 
+            <li class="nav-item active">
+            <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
+            </li>
+          
+              <div class="nav navbar-nav" id="member_header" role="presentation">
+              <a href="Formulaire_Clients/connexion.php" class="btn btn-info" data-operation="connexion">
+             <span class="cmp-icon icon-cm-login"></span>
+              <span>Connexion</span>
+         </a>
+        </div>
+          </ul>
+    
+    <?php } else { ?>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="nouvelles.html">About</a>
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="formulaire_comparateur.php">Comparateur</a>
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="gps.html">Itinéraire</a> 
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="infoCovid.html">Covid</a>
+            </li>
+
+          </ul> 
+          <div class="nav navbar-nav" id="member_header" role="presentation">
 
 <a href="Formulaire_Clients/deconnexion.php" class="btn btn-success" data-operation="deconnexion">
 <span>Deconnexion</span>
 </a>
-</div>
-         
+</div>  
+       <?php } ?>
+       
     </div>
   </div>
 </nav>
