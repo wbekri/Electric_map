@@ -14,14 +14,12 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-      <button type="button" class="xs-buttons pull-left btn btn-clear" data-toggle="collapse" data-target="#nav-right">
- <img id="logo" src="images/logo.png" />
-<style>
-  #logo {
-    width : 80px;
-  }
-</style>
-</a>
+    <button type="button" class="xs-buttons pull-left btn btn-clear" data-toggle="collapse" data-target="#nav-right">
+  <img id="logo" src="images/logo.png" />
+  
+  <style>
+    #logo {width : 80px;}
+  </style>
     
     <a class="navbar-brand" href="#">ELECTRIC MAP</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +33,7 @@
       </style>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="nouvelles.html">About</a>
@@ -46,7 +44,7 @@
         <li class="nav-item">
           <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
         </li>
-		<li class="nav-item">
+    <li class="nav-item">
           <a class="nav-link" href="gps.html">Itinéraire</a>
         </li>
         <li class="nav-item">
@@ -54,11 +52,8 @@
         </li>
       </ul>
          <div class="nav navbar-nav" id="member_header" role="presentation">
-<a href="Formulaire_Clients/connexion.php" class="btn btn-info" data-operation="connexion">
-<span class="cmp-icon icon-cm-login"></span>
-<span>Connexion</span>
-</a>
-<a href="" class="btn btn-success" data-operation="deconnexion">
+
+<a href="Formulaire_Clients/deconnexion.php" class="btn btn-success" data-operation="deconnexion">
 <span>Deconnexion</span>
 </a>
 </div>
@@ -68,13 +63,13 @@
 </nav>
 
 <?php
-<<<<<<< HEAD
+
 	 $bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8',
     'root', 'root');
-=======
+
 		
 		$bdd = getBD(); 	
->>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81
+
 		
 		
 		if(!empty ($_POST['marque']) && !empty($_POST['moteur']))
@@ -94,7 +89,7 @@
 			$rep_mm = $bdd->query("SELECT * FROM voitures  WHERE moteur LIKE '".$_POST['moteur']."'");
 			comparateur($rep_mm);
 		}
-<<<<<<< HEAD
+
 			
 		
  
@@ -103,8 +98,7 @@
 ?>
 </body>
 </html>
-=======
 
-?>
 
->>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81
+
+

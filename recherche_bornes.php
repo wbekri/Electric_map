@@ -8,7 +8,11 @@
    </head>
    
    <body>
-   	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+   	
+  <h1>Electric Map Bonjour <?php$_SESSION['email']?> </h1>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
       <button type="button" class="xs-buttons pull-left btn btn-clear" data-toggle="collapse" data-target="#nav-right">
  <img id="logo" src="images/logo.png" />
@@ -19,7 +23,7 @@
 </style>
 </a>
     
-    <a class="navbar-brand" href="#">ELECTRIC MAP</a>
+    <a class="navbar-brand" href="index.php">ELECTRIC MAP</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,36 +33,59 @@
           margin-left : 20%;
         }
       </style>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nouvelles.html">About</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="formulaire_comparateur.php">Comparateur</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
-        </li>
-    <li class="nav-item">
-          <a class="nav-link" href="gps.html">Itinéraire</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pageContact.html">Contact</a>
-        </li>
-      </ul>
-         <div class="nav navbar-nav" id="member_header" role="presentation">
-<a href="Formulaire_Clients/connexion.php" class="btn btn-info" data-operation="connexion">
-<span class="cmp-icon icon-cm-login"></span>
-<span>Connexion</span>
-</a>
-<a href="" class="btn btn-success" data-operation="deconnexion">
+     
+    
+    
+    <?php if (!isset($_SESSION['autoriser'])) { ?>
+          <ul class="navbar-nav ml-auto"> 
+            <li class="nav-item active">
+            <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
+            </li>
+          
+              <div class="nav navbar-nav" id="member_header" role="presentation">
+              <a href="Formulaire_Clients/connexion.php" class="btn btn-info" data-operation="connexion">
+             <span class="cmp-icon icon-cm-login"></span>
+              <span>Connexion</span>
+         </a>
+        </div>
+          </ul>
+    
+    <?php } else { ?>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="nouvelles.html">About</a>
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="formulaire_comparateur.php">Comparateur</a>
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="gps.html">Itinéraire</a> 
+            </li>
+          
+            <li class="nav-item">
+            <a class="nav-link" href="infoCovid.html">Covid</a>
+            </li>
+
+          </ul> 
+          <div class="nav navbar-nav" id="member_header" role="presentation">
+
+<a href="Formulaire_Clients/deconnexion.php" class="btn btn-success" data-operation="deconnexion">
 <span>Deconnexion</span>
 </a>
-</div>
-
+</div>  
+       <?php } ?>
+       
+    </div>
   </div>
 </nav>
 <br><br>

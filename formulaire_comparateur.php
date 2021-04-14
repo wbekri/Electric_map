@@ -12,14 +12,12 @@
 		
      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-      <button type="button" class="xs-buttons pull-left btn btn-clear" data-toggle="collapse" data-target="#nav-right">
- <img id="logo" src="images/logo.png" />
-<style>
-  #logo {
-    width : 80px;
-  }
-</style>
-</a>
+    <button type="button" class="xs-buttons pull-left btn btn-clear" data-toggle="collapse" data-target="#nav-right">
+  <img id="logo" src="images/logo.png" />
+  
+  <style>
+    #logo {width : 80px;}
+  </style>
     
     <a class="navbar-brand" href="#">ELECTRIC MAP</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,18 +46,17 @@
           <a class="nav-link" href="gps.html">Itinéraire</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pageContact.html">Contact</a>
+          <a class="nav-link" href="infoCovid.html">Covid</a>
         </li>
       </ul>
          <div class="nav navbar-nav" id="member_header" role="presentation">
-<a href="Formulaire_Clients/connexion.php" class="btn btn-info" data-operation="connexion">
-<span class="cmp-icon icon-cm-login"></span>
-<span>Connexion</span>
-</a>
-<a href="" class="btn btn-success" data-operation="deconnexion">
+
+<a href="Formulaire_Clients/deconnexion.php" class="btn btn-success" data-operation="deconnexion">
 <span>Deconnexion</span>
 </a>
 </div>
+         
+    </div>
   </div>
 </nav>
 <br><br><br>

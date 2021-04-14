@@ -1,22 +1,73 @@
-<<<<<<< HEAD
+
  <!DOCTYPE html>
  <html>
  <head>
  <meta charset="utf-8">
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" id="bootstrap-css">
+        <link rel="stylesheet" type="text/css" href="css/sheet.css">
+         <script src="js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <style>
     #map {position: absolute; top:0; bottom: 0; left:0; right:0;} 
   </style>
   </head>
   <body>
-  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+	<div class="container">
+    <button type="button" class="xs-buttons pull-left btn btn-clear" data-toggle="collapse" data-target="#nav-right">
+	<img id="logo" src="images/logo.png" />
+	
+	<style>
+	  #logo {width : 80px;}
+	</style>
+    
+    <a class="navbar-brand" href="#">ELECTRIC MAP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <style>
+        #navbarResponsive{
+          margin-left : 20%;
+        }
+      </style>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nouvelles.html">About</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="formulaire_comparateur.php">Comparateur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recherche_bornes.php">Bornes de recharge</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="gps.html">Itinéraire</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="infoCovid.html">Covid</a>
+        </li>
+      </ul>
+         <div class="nav navbar-nav" id="member_header" role="presentation">
+
+<a href="Formulaire_Clients/deconnexion.php" class="btn btn-success" data-operation="deconnexion">
+<span>Deconnexion</span>
+</a>
+</div>
+         
+    </div>
+  </div>
+</nav>
    
    <?php 
 		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8','root', 'root');
-=======
-<?php include ('fonctions.php'); ?>
->>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81
+
+    include ('fonctions.php'); ?>
+
 
 <html>
  

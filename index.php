@@ -13,21 +13,9 @@
 </head>
 <body >
 
-<<<<<<< HEAD
-	<h1>Electric Map </h1>
-=======
+
 	<h1>Electric Map Bonjour <?php$_SESSION['email']?> </h1>
-<!---<div id="main">
-<ul>
-	<li><a href="#Acceuil">Acceuil</a></li>
-	<li><a href="nouvelles.html">Nouvelles</a></li>
-	<li><a href="Comparateur/formulaire_comparateur.php">Comparateur</a></li>
-	<li><a href="recherche_bornes.html">Map</a></li>
-	<li><a href="pageContact.html">Contacts</a></li>
-	<li><a href="Formulaire_Clients/connexion.php">Connexion</a></li>
-<<<<<<< HEAD
-	<li><a href="Formulaire_Clients/nouveauClient.php">S'inscrire</a></li> !--->
->>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81
+
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
@@ -70,7 +58,7 @@
 		<?php } else { ?>
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="index.html">Home</a>
 						</li>
 					
 						<li class="nav-item">
@@ -90,7 +78,7 @@
 						</li>
 					
 						<li class="nav-item">
-						<a class="nav-link" href="infcovid.html">Contact</a>
+						<a class="nav-link" href="infoCovid.html">Covid</a>
 						</li>
 
 					</ul>	
@@ -121,16 +109,14 @@
     
   </div>
 </header>
-<<<<<<< HEAD
 
-=======
 <div class="content">
 <p>
 Electric Map <?php$_SESSION['autoriser']?> est une application web pour repérer les bornes de recharge  pour véhicules électriques à proximité, 
 Elle propose la cartographie de référence pour trouver les bornes de recharge en France. 
 </p>
 </div>
->>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81
+
 
 </body>
 
@@ -176,7 +162,7 @@ Elle propose la cartographie de référence pour trouver les bornes de recharge 
     <!-- Team Member 4 -->
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="images/diarra.jpg" class="card-img-top" alt="...">
+        <img src="images/iii.png" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Ibrahim Diarassouba</h5>
           <div class="card-text text-black-50">Web Developer</div>
