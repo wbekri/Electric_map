@@ -1,4 +1,4 @@
-
+<?php include ('fonctions.php'); ?>
  <!DOCTYPE html>
  <html>
  <head>
@@ -62,12 +62,6 @@
     </div>
   </div>
 </nav>
-   
-   <?php 
-		$bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8','root', 'root');
-
-    include ('fonctions.php'); ?>
-
 
 <html>
  
