@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <html>
 
    <head>
@@ -9,7 +11,7 @@
    
    <body>
    	
-  <h1>Electric Map Bonjour <?php$_SESSION['email']?> </h1>
+  <h1>Electric Map </h1>
 
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -53,7 +55,7 @@
     <?php } else { ?>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
             </li>
           
             <li class="nav-item">

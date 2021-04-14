@@ -14,7 +14,7 @@
 <body >
 
 
-	<h1>Electric Map Bonjour <?php$_SESSION['email']?> </h1>
+	<h1>Electric Map</h1>
 
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">

@@ -63,14 +63,8 @@
 </nav>
 
 <?php
-
-	 $bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8',
-    'root', 'root');
-
 		
 		$bdd = getBD(); 	
-
-		
 		
 		if(!empty ($_POST['marque']) && !empty($_POST['moteur']))
 		{
