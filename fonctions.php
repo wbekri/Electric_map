@@ -71,10 +71,32 @@
 		
 	}
 	
+	function bornes ($rep) {
+		
+			$vd = $_POST['vd'];
+			$va = $_POST['va'];
+			
+			if($vd == ""){$vd ="xxx";}
+			if($va == ""){$va ="xxx";}
+		
+		if($vd !="xxx" or $va !="xxx"){
+				
+			$bornes ="[";
+			while ($ligne = $rep ->fetch()){
+				echo "<script> console.log('"."[".$ligne['latitude'].  ", ".$ligne['ville']   ."],". " ')</script>";
+				$bornes = $bornes ."[".$ligne['latitude'].  ", ".$ligne['longitude']   ."],";
+			}
+		
+			$bornes = $bornes. " ]";
+			echo "<script> console.log('".  $bornes ."')</script>";
+		
+		}
+		else {echo "veuillez mettre le nom d'une ville ";}
+		
+	}
+	
 	
 
-	
-	
 ?>
 
 <style>

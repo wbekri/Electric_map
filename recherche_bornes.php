@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<html>
+
    <head>
    	<meta charset="utf-8">
    	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" id="bootstrap-css">
@@ -62,20 +62,17 @@
   </div>
 </nav>
 <br><br>
-<div style="width : 100%; margin-top: 50px;">
+	<div style="width : 100%; margin-top: 50px;">
 
 		<form action="map.php" method="post" autocomplete="off" style="margin-left: auto;margin-right: auto;width: 200px;">
+		
 		<title>Recherche Simple</title>
 		
-				<p>
-				Ville de depart:
-				<input type="text" name="vd" value=""placeholder="facultatif"/> </p>
-				<p>
-				Ville d'arrivee:
-				<input type="text" name="va" value="" placeholder="facultatif"/> </p>
-				Code postal:
-				<input type="int" name="cd" value="" placeholder="facultatif"/> </p>
-				<p><input type="submit" value="Recherche"></p>	
+				<p> Ville de depart: <input type="text" name="vd" value="" /> </p>
+				<p> Ville d'arrivee: <input type="text" name="va" value="" /> </p>
+				<b>OU</b>
+				<p> Code postal: <input type="text" name="cp" value="" /> </p>
+				<p> <input type="submit" value="Recherche"> </p>	
 	</div>
    </body>
    

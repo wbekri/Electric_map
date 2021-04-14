@@ -68,8 +68,13 @@
 </nav>
 
 <?php
+<<<<<<< HEAD
 	 $bdd = new PDO('mysql:host=localhost;dbname=electric_map;charset=utf8',
     'root', 'root');
+=======
+		
+		$bdd = getBD(); 	
+>>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81
 		
 		
 		if(!empty ($_POST['marque']) && !empty($_POST['moteur']))
@@ -89,6 +94,7 @@
 			$rep_mm = $bdd->query("SELECT * FROM voitures  WHERE moteur LIKE '".$_POST['moteur']."'");
 			comparateur($rep_mm);
 		}
+<<<<<<< HEAD
 			
 		
  
@@ -97,3 +103,8 @@
 ?>
 </body>
 </html>
+=======
+
+?>
+
+>>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81

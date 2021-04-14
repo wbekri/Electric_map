@@ -1,4 +1,4 @@
-<?php include ('C:\wamp64\www\Electric_map\fonctions.php'); ?>
+<?php include ('..\fonctions.php'); ?>
 <?php session_start(); ?>
 
 <html>
@@ -24,14 +24,19 @@
 				if($check->rowCount() > 0) 
 				{
 					$_SESSION['autoriser'] = "oui";
+					$_SESSION['email'] = $email;
 					
-					echo "<h3>Connexion réussi vous allez etre rediriger vers la page d'acceuil</h3>";
-					echo "<meta http-equiv='Refresh' content='3;URL=/Electric_map/index.php'>";					
+		?>	
+					<script> alert('Connexion réussi'); </script>
+		<?php		
+					echo "<meta http-equiv='Refresh' content='0;URL=/Electric_map/index.php'>";					
 				} 
 				else 
 				{
-					echo "<h3>L'adresse e-mail ou le mot de passe est incorrect</h3>";
-					echo "<meta http-equiv='Refresh' content='3;URL=connexion.php'>";
+		?>			
+					<script> alert("L'adresse e-mail ou le mot de passe est incorrect"); </script>
+		<?php
+					echo "<meta http-equiv='Refresh' content='0;URL=connexion.php'>";
 				}	
 			}
 			else 

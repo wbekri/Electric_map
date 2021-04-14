@@ -1,29 +1,22 @@
-// On s'assure que la page est chargée
-window.onload = function(){
+
+
+	// On s'assure que la page est chargée
+	window.onload = function(){
     // On initialise la carte sur les coordonnées GPS de Paris
     let macarte = L.map('carte').setView([48.852969, 2.349903], 13)
 
-    // On charge les tuiles depuis un serveur au choix, ici OpenStreetMap France
-    L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-        attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+    // On charge les tuiles depuis un serveur au choix, ici OpenStreetMap 
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=3oa3J7TEkNh2fVNl36qz', {
+        attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
         minZoom: 1,
         maxZoom: 20
     }).addTo(macarte)
 	
-	
-	
-
 	L.Routing.control({
-		// Nous personnalisons le tracé
+		// On personalise le tracé gps
 		lineOptions: {
 			styles: [{color: '#ff8f00', opacity: 1, weight: 7}]
 		},
-
-		// Nous personnalisons la langue et le moyen de transport
-		router: new L.Routing.osrmv1({
-			language: 'fr',
-			profile: 'car', // car, bike, foot
-		}),
 
 		geocoder: L.Control.Geocoder.nominatim()
 	}).addTo(macarte)

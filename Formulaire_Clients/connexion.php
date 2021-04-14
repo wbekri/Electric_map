@@ -24,7 +24,7 @@
                 <input type="submit" id='submit' value='Connexion' >
 				    <div class="mt-4">
                     <div class="d-flex justify-content-center links">
-                        <a id="adresse" href="nouveau.html"> Je veux creer un compte </a>
+                     <a id="adresse" href="nouveau.php"> Je veux creer un compte </a>
                   </div>
               </div>
             </form>

@@ -13,7 +13,21 @@
 </head>
 <body >
 
+<<<<<<< HEAD
 	<h1>Electric Map </h1>
+=======
+	<h1>Electric Map Bonjour <?php$_SESSION['email']?> </h1>
+<!---<div id="main">
+<ul>
+	<li><a href="#Acceuil">Acceuil</a></li>
+	<li><a href="nouvelles.html">Nouvelles</a></li>
+	<li><a href="Comparateur/formulaire_comparateur.php">Comparateur</a></li>
+	<li><a href="recherche_bornes.html">Map</a></li>
+	<li><a href="pageContact.html">Contacts</a></li>
+	<li><a href="Formulaire_Clients/connexion.php">Connexion</a></li>
+<<<<<<< HEAD
+	<li><a href="Formulaire_Clients/nouveauClient.php">S'inscrire</a></li> !--->
+>>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
@@ -107,7 +121,16 @@
     
   </div>
 </header>
+<<<<<<< HEAD
 
+=======
+<div class="content">
+<p>
+Electric Map <?php$_SESSION['autoriser']?> est une application web pour repérer les bornes de recharge  pour véhicules électriques à proximité, 
+Elle propose la cartographie de référence pour trouver les bornes de recharge en France. 
+</p>
+</div>
+>>>>>>> 4533554e14cd87044166365ae82590bd07c1ea81
 
 </body>
 
